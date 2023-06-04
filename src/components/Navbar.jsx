@@ -84,36 +84,44 @@ function Navbar() {
           }
         >
           <div className="flex flex-col my-4">
-            <Link
+            <Link onClick={() => {
+              setNavMobile(false);
+            }}
               to="/"
-              className="text-white flex font-bold text-lg py-2 gap-5 hover:text-nav"
+              className={location.pathname == "/" ? "text-nav flex font-bold text-lg py-2 gap-5" :"text-white flex font-bold text-lg py-2 gap-5 hover:text-nav"}
             >
               <IconHome2 />
               <p>Home</p>
             </Link>
           </div>
           <div className="flex flex-col my-4">
-            <Link
+            <Link onClick={() => {
+              setNavMobile(false);
+            }}
               to="/skill"
-              className="text-white flex font-bold text-lg py-2 gap-5 hover:text-nav"
+              className={location.pathname == "/skill" ? "text-nav flex font-bold text-lg py-2 gap-5" :"text-white flex font-bold text-lg py-2 gap-5 hover:text-nav"}
             >
               <IconCode />
               <p>Skill</p>
             </Link>
           </div>
           <div className="flex flex-col my-4">
-            <Link
+            <Link onClick={() => {
+              setNavMobile(false);
+            }}
               to="/experience"
-              className="text-white flex font-bold text-lg py-2 gap-5 hover:text-nav"
+              className={location.pathname == "/experience" ? "text-nav flex font-bold text-lg py-2 gap-5" :"text-white flex font-bold text-lg py-2 gap-5 hover:text-nav"}
             >
               <IconApi />
               <p>Experience</p>
             </Link>
           </div>
           <div className="flex flex-col my-4">
-            <Link
+            <Link onClick={() => {
+              setNavMobile(false);
+            }}
               to="/project"
-              className="text-white flex font-bold text-lg py-2 gap-5 hover:text-nav"
+              className={location.pathname == "/project" ? "text-nav flex font-bold text-lg py-2 gap-5" :"text-white flex font-bold text-lg py-2 gap-5 hover:text-nav"}
             >
               <IconBrandGitlab />
               <p>Project</p>

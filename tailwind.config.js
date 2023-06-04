@@ -34,7 +34,11 @@ export default {
         "9xl": "96rem",
       },
       fontSize: {
-        "2wxl": ["24px", "3rem"]
+        "2wxl": ["24px", "3rem"],
+        "sxs": ["10px", "0.5rem"]
+      },
+      width: {
+        "1/7" : "14.285714286%"
       }
     },
   },
