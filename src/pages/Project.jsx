@@ -28,6 +28,20 @@ function Project() {
   });
   const projects = [
     {
+      img: "/image/bisaabsen.png",
+      title: "BisaAbsen",
+      position: "Fullstack Developer",
+      link: "https://hrisamanah.com",
+      stack: ["ReactJS", "Vite", "Tailwind", "Ant Design", "Laravel", "MySQL"],
+    },
+    {
+      img: "/image/jokerhub.png",
+      title: "Jokerhub",
+      position: "Frontend Developer",
+      link: "https://jokerhub.netlify.app",
+      stack: ["ReactJS", "Vite", "Tailwind", "Ant Design"],
+    },
+    {
       img: "/image/report-logo.png",
       title: "Reezyx Portfolio",
       position: "Frontend Developer",

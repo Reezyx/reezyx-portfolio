@@ -37,7 +37,7 @@ function Experience() {
                   </p>
                   <div className="flex justify-end">
                     <p className="w-1/4 md:w-1/3 my-2 rounded-xl bg-type-string text-gray-800 flex justify-center xl:text-lg md:text-sm">
-                      Internship Program
+                      Freelance
                     </p>
                   </div>
                   <p className="text-justify xl:text-lg md:text-md text-gray-600">

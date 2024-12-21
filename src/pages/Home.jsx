@@ -6,12 +6,13 @@ import {
   IconBrandLinkedin,
   IconBrandYoutube,
 } from "@tabler/icons-react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import ProjectCard from "../components/ProjectCard";
 import { Link } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 import { animated, config, useSpring } from "@react-spring/web";
+import { RingLoader } from "react-spinners";
 
 function Home() {
   const style = useSpring({
@@ -29,6 +30,13 @@ function Home() {
   });
   const projects = [
     {
+      img: "/image/bisaabsen.png",
+      title: "BisaAbsen",
+      position: "Fullstack Developer",
+      link: "https://hrisamanah.com",
+      stack: ["ReactJS", "Vite", "Tailwind", "Ant Design", "Laravel", "MySQL"],
+    },
+    {
       img: "/image/report-logo.png",
       title: "Reezyx Portfolio",
       position: "Frontend Developer",
@@ -43,13 +51,6 @@ function Home() {
       stack: ["ReactJS", "NextJS", "TailwindCSS", "Laravel", "MySQL"],
     },
     {
-      img: "/image/lokalingo-logo.png",
-      title: "Lokalingo",
-      position: "Backend Developer",
-      link: "https://lokalingo.fun",
-      stack: ["Laravel", "MySQL", "Bootstrap"],
-    },
-    {
       img: "/image/berbagilink-logo.png",
       title: "Berbagilink",
       position: "Fullstack Developer",
@@ -57,6 +58,7 @@ function Home() {
       stack: ["Reactjs", "Bootstrap", "Laravel", "JQuery", "MySQL"],
     },
   ];
+
   return (
     <>
       {/* WEB VIEW*/}
@@ -80,10 +82,13 @@ function Home() {
                     }}
                     onInit={(typewriter) => {
                       typewriter
-                        .typeString("Backend Developer")
+                        .typeString("Fullstack Developer")
                         .pauseFor(2000)
                         .deleteAll()
                         .typeString("Laravel Developer")
+                        .pauseFor(2000)
+                        .deleteAll()
+                        .typeString("Curriculum Developer")
                         .pauseFor(2000)
                         .start();
                     }}
@@ -289,7 +294,11 @@ function Home() {
               About Me
             </p>
             <div className="w-16 mt-2 border-0 border-t-4 md:border-t-4 border-solid border-nav rounded-md mx-auto"></div>
-            <img className="w-4/6 flex mx-auto py-8" src="/image/raw2.png" alt="" />
+            <img
+              className="w-4/6 flex mx-auto py-8"
+              src="/image/raw2.png"
+              alt=""
+            />
             <div className="col-span-4 flex">
               <p className="px-8 text-base font-medium py-2 text-justify  text-gray-800">
                 I am a Final Year Computer Science Student in State University
