@@ -51,8 +51,8 @@ function Skill() {
       {/* WEB VIEW*/}
       <div className="mt-8 md:block hidden">
         <section className="bg-white">
-          <div className="md:mt-14 py-8 xl:mt-24">
-            <p className="text-center xl:text-4xl md:text-3xl font-bold text-gray-600">
+          <div className="md:mt-14 py-8 xl:mt-20 xl:mb-2">
+            <p className="text-center xl:text-4xl md:text-3xl font-bold ">
               Tools Used
             </p>
             <div className="xl:w-24 md:w-16 border-0 xl:border-t-8 md:border-t-4 border-solid border-nav rounded-md mx-auto xl:mt-3 md:mt-1"></div>

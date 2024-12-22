@@ -1,6 +1,7 @@
 import {
   IconApi,
   IconBrandGitlab,
+  IconCertificate,
   IconCode,
   IconHome2,
   IconMenu2,
@@ -31,25 +32,51 @@ function Navbar() {
         <div className="hidden md:flex items-center gap-4 lg:gap-10 font-semibold xl:py-4">
           <Link
             to="/"
-            className={ location.pathname == "/" ? "text-nav font-bold lg:text-2xl md:text-base" : "text-white hover:text-nav hover:duration-500 font-bold lg:text-2xl md:text-base"}
+            className={
+              location.pathname == "/"
+                ? "text-nav font-bold lg:text-2xl md:text-base"
+                : "text-white hover:text-nav hover:duration-500 font-bold lg:text-2xl md:text-base"
+            }
           >
             Home
           </Link>
           <Link
             to="/skill"
-            className={ location.pathname == "/skill" ? "text-nav font-bold lg:text-2xl md:text-base" : "text-white hover:text-nav hover:duration-500 font-bold lg:text-2xl md:text-base"}
+            className={
+              location.pathname == "/skill"
+                ? "text-nav font-bold lg:text-2xl md:text-base"
+                : "text-white hover:text-nav hover:duration-500 font-bold lg:text-2xl md:text-base"
+            }
           >
             Skill
           </Link>
           <Link
             to="/experience"
-            className={ location.pathname == "/experience" ? "text-nav font-bold lg:text-2xl md:text-base" : "text-white hover:text-nav hover:duration-500 font-bold lg:text-2xl md:text-base"}
+            className={
+              location.pathname == "/experience"
+                ? "text-nav font-bold lg:text-2xl md:text-base"
+                : "text-white hover:text-nav hover:duration-500 font-bold lg:text-2xl md:text-base"
+            }
           >
             Experience
           </Link>
           <Link
+            to="/certification"
+            className={
+              location.pathname == "/certification"
+                ? "text-nav font-bold lg:text-2xl md:text-base"
+                : "text-white hover:text-nav hover:duration-500 font-bold lg:text-2xl md:text-base"
+            }
+          >
+            Certification
+          </Link>
+          <Link
             to="/project"
-            className={ location.pathname == "/project" ? "text-nav font-bold lg:text-2xl md:text-base" : "text-white hover:text-nav hover:duration-500 font-bold lg:text-2xl md:text-base"}
+            className={
+              location.pathname == "/project"
+                ? "text-nav font-bold lg:text-2xl md:text-base"
+                : "text-white hover:text-nav hover:duration-500 font-bold lg:text-2xl md:text-base"
+            }
           >
             Project
           </Link>
@@ -70,6 +97,7 @@ function Navbar() {
           style={{
             backgroundColor: "#423e3b",
           }}
+          height={440}
           extra={
             <Space>
               <a
@@ -84,44 +112,80 @@ function Navbar() {
           }
         >
           <div className="flex flex-col my-4">
-            <Link onClick={() => {
-              setNavMobile(false);
-            }}
+            <Link
+              onClick={() => {
+                setNavMobile(false);
+              }}
               to="/"
-              className={location.pathname == "/" ? "text-nav flex font-bold text-lg py-2 gap-5" :"text-white flex font-bold text-lg py-2 gap-5 hover:text-nav"}
+              className={
+                location.pathname == "/"
+                  ? "text-nav flex font-bold text-lg py-2 gap-5"
+                  : "text-white flex font-bold text-lg py-2 gap-5 hover:text-nav"
+              }
             >
               <IconHome2 />
               <p>Home</p>
             </Link>
           </div>
           <div className="flex flex-col my-4">
-            <Link onClick={() => {
-              setNavMobile(false);
-            }}
+            <Link
+              onClick={() => {
+                setNavMobile(false);
+              }}
               to="/skill"
-              className={location.pathname == "/skill" ? "text-nav flex font-bold text-lg py-2 gap-5" :"text-white flex font-bold text-lg py-2 gap-5 hover:text-nav"}
+              className={
+                location.pathname == "/skill"
+                  ? "text-nav flex font-bold text-lg py-2 gap-5"
+                  : "text-white flex font-bold text-lg py-2 gap-5 hover:text-nav"
+              }
             >
               <IconCode />
               <p>Skill</p>
             </Link>
           </div>
           <div className="flex flex-col my-4">
-            <Link onClick={() => {
-              setNavMobile(false);
-            }}
+            <Link
+              onClick={() => {
+                setNavMobile(false);
+              }}
               to="/experience"
-              className={location.pathname == "/experience" ? "text-nav flex font-bold text-lg py-2 gap-5" :"text-white flex font-bold text-lg py-2 gap-5 hover:text-nav"}
+              className={
+                location.pathname == "/experience"
+                  ? "text-nav flex font-bold text-lg py-2 gap-5"
+                  : "text-white flex font-bold text-lg py-2 gap-5 hover:text-nav"
+              }
             >
               <IconApi />
               <p>Experience</p>
             </Link>
           </div>
           <div className="flex flex-col my-4">
-            <Link onClick={() => {
-              setNavMobile(false);
-            }}
+            <Link
+              onClick={() => {
+                setNavMobile(false);
+              }}
+              to="/certification"
+              className={
+                location.pathname == "/certification"
+                  ? "text-nav flex font-bold text-lg py-2 gap-5"
+                  : "text-white flex font-bold text-lg py-2 gap-5 hover:text-nav"
+              }
+            >
+              <IconCertificate />
+              <p>Certification</p>
+            </Link>
+          </div>
+          <div className="flex flex-col my-4">
+            <Link
+              onClick={() => {
+                setNavMobile(false);
+              }}
               to="/project"
-              className={location.pathname == "/project" ? "text-nav flex font-bold text-lg py-2 gap-5" :"text-white flex font-bold text-lg py-2 gap-5 hover:text-nav"}
+              className={
+                location.pathname == "/project"
+                  ? "text-nav flex font-bold text-lg py-2 gap-5"
+                  : "text-white flex font-bold text-lg py-2 gap-5 hover:text-nav"
+              }
             >
               <IconBrandGitlab />
               <p>Project</p>

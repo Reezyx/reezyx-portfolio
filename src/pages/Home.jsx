@@ -12,7 +12,6 @@ import ProjectCard from "../components/ProjectCard";
 import { Link } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 import { animated, config, useSpring } from "@react-spring/web";
-import { RingLoader } from "react-spinners";
 
 function Home() {
   const style = useSpring({
