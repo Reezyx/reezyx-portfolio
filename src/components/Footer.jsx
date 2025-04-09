@@ -12,8 +12,11 @@ function Footer() {
         Copyright <span className="xl:text-lg md:text-md">©</span> 2023
         Rudiansyah Wijaya Pratama (Reezyx).
         <p>
-          All Rights Reserved | Want to Collaborate? Contact Me by Email in
-          rudiansyahpratama04@gmail.com
+          All Rights Reserved{" "}
+          <span className="hidden md:block">
+            | Want to Collaborate? Contact Me by Email in
+            rudiansyahpratama04@gmail.com
+          </span>
         </p>
       </p>
     </>

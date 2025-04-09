@@ -36,15 +36,16 @@ function Skill() {
     { img: "/image/laravel.png" },
     { img: "/image/mysql.png" },
     { img: "/image/postman.png" },
-  ];
-  const learn = [
     { img: "/image/javascript.png" },
     { img: "/image/react.png" },
+  ];
+  const learn = [
     { img: "/image/tailwind.png" },
     { img: "/image/golang.png" },
     { img: "/image/figma.png" },
     { img: "/image/redis.png" },
     { img: "/image/next.png" },
+    { img: "/image/python.png" },
   ];
   return (
     <>

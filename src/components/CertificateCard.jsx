@@ -12,7 +12,7 @@ function CertificateCard({ item }) {
       target="_blank"
     >
       <img className="mx-auto w-2/3" src={item.img} alt="" />
-      <p className="xl:text-xl md:text-xl text-md font-bold text-center text-gray-800 md:mt-5 sm:my-3">
+      <p className="xl:text-xl md:text-xl text-md font-bold text-center text-gray-800 md:mt-5 my-3 md:my-0">
         {item.title}
       </p>
       <div className="flex flex-wrap gap-1 md:gap-3 md:my-4 justify-center">
@@ -32,7 +32,7 @@ function CertificateCard({ item }) {
       onClick={() => clickWithoutLink()}
     >
       <img className="mx-auto w-2/3" src={item.img} alt="" />
-      <p className="xl:text-xl md:text-xl text-md font-bold text-center text-gray-800 md:mt-5 sm:my-3">
+      <p className="xl:text-xl md:text-xl text-md font-bold text-center text-gray-800 md:mt-5 my-3 md:my-0">
         {item.title}
       </p>
       <div className="flex flex-wrap gap-1 md:gap-3 md:my-4 justify-center">

@@ -29,10 +29,10 @@ function Home() {
   });
   const projects = [
     {
-      img: "/image/bisaabsen.png",
-      title: "BisaAbsen",
-      position: "Fullstack Developer",
-      link: "https://hrisamanah.com",
+      img: "/image/sihris.png",
+      title: "SiHRIS",
+      position: "Fullstack Developer | Tech Lead",
+      link: "https://sihris.id",
       stack: ["ReactJS", "Vite", "Tailwind", "Ant Design", "Laravel", "MySQL"],
     },
     {
@@ -179,12 +179,12 @@ function Home() {
               </div>
               <div className="col-span-4 flex">
                 <p className="xl:text-2wxl font-semibold text-justify my-auto xl:ml-24 md:ml-12 text-gray-800">
-                  I am a Final Year Computer Science Student in State University
-                  of Jakarta also a Backend Developer Intern at PT Amanah Karya
-                  Indonesia who have more than 1 year working experience in
-                  there. I have interest in Website Development both Back-End or
-                  Front-End Programming and until today I'm still learn about
-                  that
+                  I’m a fresh graduate in Computer Science from State University
+                  of Jakarta, currently working as a Freelance Web Developer at
+                  PT Amanah Karya Indonesia with over 2 years of experience in
+                  building websites. I enjoy both front-end and back-end
+                  development, and I’m always excited to learn new things,
+                  experiment with new tools, and improve my skills.
                 </p>
               </div>
             </div>

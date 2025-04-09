@@ -28,10 +28,10 @@ function Project() {
   });
   const projects = [
     {
-      img: "/image/bisaabsen.png",
-      title: "BisaAbsen",
-      position: "Fullstack Developer",
-      link: "https://hrisamanah.com",
+      img: "/image/sihris.png",
+      title: "SiHRIS",
+      position: "Fullstack Developer | Tech Lead",
+      link: "https://sihris.id",
       stack: ["ReactJS", "Vite", "Tailwind", "Ant Design", "Laravel", "MySQL"],
     },
     {
