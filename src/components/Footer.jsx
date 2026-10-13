@@ -1,26 +1,15 @@
-import React from "react";
+import { IconArrowUpRight } from "@tabler/icons-react";
+import { Link } from "react-router-dom";
+import { profile } from "../data/portfolio";
 
 function Footer() {
-  return (
-    <>
-      <p className="xl:text-base md:text-xs md:block hidden text-center bg-nav-color text-gray-100 xl:py-3 md:py-2 rounded-sm">
-        Copyright <span className="xl:text-lg md:text-md">©</span> 2023
-        Rudiansyah Wijaya Pratama (Reezyx). All Rights Reserved | Want to
-        Collaborate? Contact Me by Email in rudiansyahpratama04@gmail.com
-      </p>
-      <p className="text-xs sm:block md:hidden text-center bg-nav-color text-gray-100 py-2 rounded-sm">
-        Copyright <span className="xl:text-lg md:text-md">©</span> 2023
-        Rudiansyah Wijaya Pratama (Reezyx).
-        <p>
-          All Rights Reserved{" "}
-          <span className="hidden md:block">
-            | Want to Collaborate? Contact Me by Email in
-            rudiansyahpratama04@gmail.com
-          </span>
-        </p>
-      </p>
-    </>
-  );
+  return <footer className="site-footer">
+    <div className="container footer-main">
+      <div><p className="eyebrow">Available for thoughtful collaborations</p><h2>Have a good idea?<br /><em>Let&apos;s make it real.</em></h2></div>
+      <a className="footer-mail" href={`mailto:${profile.email}`}>{profile.email} <IconArrowUpRight size={19} /></a>
+    </div>
+    <div className="container footer-bottom"><span>© 2026 Reezyx</span><div><Link to="/">Home</Link><Link to="/project">Selected work</Link><span>Built with care</span></div></div>
+  </footer>;
 }
 
 export default Footer;

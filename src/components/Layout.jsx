@@ -1,20 +1,21 @@
-import React, { useEffect, useState } from "react";
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import ScrollProgress from "./ScrollProgress";
 
 function Layout() {
   const { pathname } = useLocation();
-  const [path, setPath] = useState(pathname.split("/")[1]);
 
   useEffect(() => {
-    setPath(pathname.split("/")[1]);
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, [pathname]);
 
   return (
-    <div>
+    <div className="site-shell">
+      <ScrollProgress />
       <Navbar />
-      <Outlet />
+      <main className="page-easein"><Outlet /></main>
       <Footer />
     </div>
   );

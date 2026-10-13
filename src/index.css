@@ -1,47 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-/* @import url("/font/Sora-VariableFont_wght.ttf");
-
 @font-face {
-  font-family: "Sora";
-  src: url("/font/Sora-VariableFont_wght.ttf");
-} */
-
-a {
-  @apply no-underline text-dark-font;
+  font-family: "Poppins";
+  src: url("/font/Poppins.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 100 900;
 }
 
-body {
-  @apply m-0 p-0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  @apply m-0;
-}
-
-* {
-  @apply font-poppins;
-  box-sizing: border-box;
-}
-
-.page-easein{
-  animation: fade 0.9 ease-in;
-}
-
-@keyframes fade{
-  0% {
-    opacity: 0;
-  }
-}
-/*
-.bg-login {
-  background-image: url("/images/login/background-login.png");
-  @apply bg-center bg-contain bg-no-repeat;
-} */
+* { box-sizing: border-box; }
+html, body, #root { min-height: 100%; }
+body { margin: 0; font-family: "Poppins", Arial, sans-serif; font-size: 16px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+::selection { background: var(--accent); color: var(--accent-ink); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
